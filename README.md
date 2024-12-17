@@ -14,35 +14,27 @@
 
 
 <b>- osTicket Installation Files:</b> 
- 1. Download the osTicket-Installation-Files.zip: https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD and unzip the file onto your VM's desktop into a folder.
+ 1. Download the osTicket-Installation-Files.zip: [osTicket.zip](https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD) and unzip the file onto your VM's desktop into a folder.
     - The installation files contain all the necessary tools, dependencies, and software required to set up osTicket.
 
-<h2>Environments and Technologies Used</h2>
-
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Internet Information Services (IIS)
-
-<h2>Operating Systems Used </h2>
-
-- Windows 10</b> (21H2)
-
-<h2>List of Prerequisites</h2>
-
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
 
 <h2>Installation Steps</h2>
 
 
 <p>
-<img src="https://github.com/user-attachments/assets/59208870-b191-42bd-af3b-f2d1ba0d2d43" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/a7951c34-3cc6-4978-a9cc-1657848e9f2a" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/6c4a18bf-0d44-4a78-91e7-b2bcc126f724" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+First we need to Install / Enable IIS in Windows WITH CGI. IIS (Internet Information Services) is the web server needed to host osTicket, and CGI allows IIS to execute PHP scripts.
+  
+  1.  Navigate to Control Panel > Programs > Programs and Features and head into "Turn Windows Features on or off"
+  2.   Check the box "internet infortmation services (ISS)"
+  3.  Expand ISS -> Expand "World Wide Web Services" -> Expand "Application Development Feature" -> Check the box "CGI"
+  4.  Press "OK" to continue with the installation 
+
+
+
 </p>
 <br />
 
