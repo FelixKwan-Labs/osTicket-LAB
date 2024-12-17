@@ -77,12 +77,33 @@ Install Visual C++ Redistributable (VC_redist.x86.exe) and MySQL 5.5.62 (mysql-5
 <p>
 Open IIS as Administrator, then use PHP Manager to register PHP. Path: C:\PHP\php-cgi.exe. This links PHP to IIS, enabling PHP scripts to run on the web server. Afterwards reload IIS by stopping/starting the server in Manage Server. Reloading IIS applies all new configurations and ensures services are ready.
 </p>
+<p>
+  Return back to "osTicket-Installation-Files" and unzip "osTicket-v1.15.8.zip". 
+
+  - Copy the "upload" folder to C:\inetpub\wwwroot
+  - Rename the "upload" folder to "osTicket"
+  - Afterwards reload IIS by stopping/starting the server in Manage Server again.
+</p>
+<p>The osTicket files must be placed in the IIS root directory for the web server to serve them.
+</p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/1cd2fe06-d1dd-4ead-bfdf-640ddfe77274" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/dc5e5fba-a707-4150-8cf6-65e458a1a731" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Then on the IIS Manager, Navigate to Sites → Default → osTicket and click “Browse *:80.”.  This verifies osTicket is accessible and identifies any missing PHP extensions. As shown on the second photo, some PHP extensions are not enabled.
+</p>
+<p>
+  To enable the PHP extenstions, head back to the IIS Manager and Navigate to Sites → Default → osTicket then head to "PHP Manager" and click on "Enable or disable extensions". Enable the following extensions:
+
+  - php_imap.dll
+  - php_intl.dll
+  - php_opcache.dll
+<p>
+  These extensions are required for osTicket's full functionality (e.g., email, internationalization, and caching).
+</p>
+
 </p>
 <br />
 <p>
