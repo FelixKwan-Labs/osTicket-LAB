@@ -3,12 +3,19 @@
 </p>
 
 <h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+
+<b>- Microsoft Azure (Virtual Machines/Compute):</b> 
+  1. Sign up and create a free subscription: https://azure.microsoft.com/en-us/free/
+  2. Get logged into the Azure Portal: https://portal.azure.com
+  3. Create an Azure Virtual Machine (Windows 10, 4 vCPUs)
+     - The VM provides an isolated Windows environment to install and configure osTicket, ensuring a controlled setup.
+  4. Log into the VM using Remote Desktop
+     - This step grants access to the VM's graphical interface to perform installations and configurations.
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+<b>- osTicket Installation Files:</b> 
+ 1. Download the osTicket-Installation-Files.zip: https://drive.google.com/uc?export=download&id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD and unzip the file onto your VM's desktop into a folder.
+    - The installation files contain all the necessary tools, dependencies, and software required to set up osTicket.
 
 <h2>Environments and Technologies Used</h2>
 
