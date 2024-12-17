@@ -29,7 +29,7 @@
 First we need to Install / Enable IIS in Windows WITH CGI. IIS (Internet Information Services) is the web server needed to host osTicket, and CGI allows IIS to execute PHP scripts.
   
   1.  Navigate to Control Panel > Programs > Programs and Features and head into "Turn Windows Features on or off"
-  2.   Check the box "internet infortmation services (ISS)"
+  2.  Check the box "internet infortmation services (ISS)"
   3.  Expand ISS -> Expand "World Wide Web Services" -> Expand "Application Development Feature" -> Check the box "CGI"
   4.  Press "OK" to continue with the installation 
 
@@ -60,12 +60,22 @@ Create a new directory on the C:Drive named "PHP". Then from the “osTicket-Ins
 Install Visual C++ Redistributable (VC_redist.x86.exe) and MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installing files. The Visual C++ Redistributable is required for PHP and MySQL to function correctly on Windows and MySQL is the database management system osTicket uses to store its data.
 
 </p>
+<p>
+  When Installing MySQL 5.5.62 
+  
+1.  Select "Typical" when choosing a setup type.
+2.  Select "Standard Configuration" when choosing the configuration type.
+3.  During the secuirty options, enter "root" as the password for simplicity.
+4.  MySQL is now ready to be excuted.
+      
+</p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/c76e77ec-4a67-4656-938c-ffd30217a091" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/3d8f81f0-87ce-44bd-80ac-89b20bad9aea" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Open IIS as Administrator, then use PHP Manager to register PHP. Path: C:\PHP\php-cgi.exe. This links PHP to IIS, enabling PHP scripts to run on the web server. Afterwards reload IIS by stopping/starting the server in Manage Server. Reloading IIS applies all new configurations and ensures services are ready.
 </p>
 <br />
 <p>
