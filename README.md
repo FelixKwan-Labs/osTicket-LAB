@@ -39,13 +39,49 @@ First we need to Install / Enable IIS in Windows WITH CGI. IIS (Internet Informa
 <br />
 
 <p>
+<img src="https://github.com/user-attachments/assets/42032a4d-7bfe-45cc-a388-63ddcb491b34" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Then we head into the unzipped "osTicket-Installation-Files" file we had installed onto the VM's desktop and install "PHP Manager" for IIS. PHP Manager simplifies the process of registering and managing PHP within IIS.
+</p>
+<p>
+Within the same file you will have to also install IIS Rewrite Module (rewrite_amd). The Rewrite Module enables URL rewriting, which is required for clean and user-friendly URLs in osTicket.
+</p>
+
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/8bc7a7cc-73cc-4f8f-8b00-5e322827a07f"/>
+</p>
+<p>
+Create a new directory on the C:Drive named "PHP". Then from the “osTicket-Installation-Files” folder, unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the “C:\PHP” folder.
+</p>
+<p>
+Install Visual C++ Redistributable (VC_redist.x86.exe) and MySQL 5.5.62 (mysql-5.5.62-win32.msi) from the installing files. The Visual C++ Redistributable is required for PHP and MySQL to function correctly on Windows and MySQL is the database management system osTicket uses to store its data.
+
+</p>
+<br />
+<p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
-
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
+<p>
+<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+</p>
+<br />
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
