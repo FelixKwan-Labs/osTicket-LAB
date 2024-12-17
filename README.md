@@ -127,9 +127,46 @@ Rename Configuration File "into ost-config.php". Navigate to the C:Drive inetpub
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/58ecb3d7-21d5-40c0-bc5e-34f902de6e16" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+ Continue Setting Up osTicket in the Browser, provide details like the helpdesk name and default email. This step initializes osTicket’s basic configuration. 
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/0c55d5f9-2c0d-40c3-8509-cf24faa5336f" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/0c0c96c1-44c3-42d6-b69a-bc55ab91d34b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+<p>
+From the “osTicket-Installation-Files” folder, install HeidiSQL, HeidiSQL simplifies database management, and the osTicket database is essential for storing osTicket data.
+
+  - Open Heidi SQL
+  - Create a new session, root/root
+  - Connect to the session
+  - Create a database called “osTicket”
+<p>
+   Finalize osTicket Setup in the Browser by providing MySQL credentials:
+
+  - Database: osTicket
+  - Username: root
+  - Password: root
+  - Finally click "Install Now"
+</p>
+</p>
+<br />
+
+<p>
+<img src="https://github.com/user-attachments/assets/5233fbb8-6d36-4761-b5b9-14144521e847" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/2ccbffe5-5390-4792-b723-c5a6b33a4d99" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+</p>
+<p>
+Congratulations, hopefully it is installed with no errors!
+
+- Browse to your help desk login page: http://localhost/osTicket/scp/login.php
+- End Users osTicket URL: http://localhost/osTicket/ 
+
 </p>
 <br />
