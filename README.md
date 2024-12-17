@@ -107,10 +107,23 @@ Then on the IIS Manager, Navigate to Sites → Default → osTicket and click �
 </p>
 <br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<img src="https://github.com/user-attachments/assets/b1926a65-481a-4642-80ce-9e0f990557a8" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/d205992a-068c-4d40-97f2-46bf8cf42b0b" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://github.com/user-attachments/assets/0a4b4d97-aedb-448f-90cd-de6a8b3fd959" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Rename Configuration File "into ost-config.php". Navigate to the C:Drive inetpub > wwwroot > osTicket > include. Find the file named "ost-sampleconfig.php" and rename it to "ost-config.php". osTicket requires this file to store its configuration settings.
+</p>
+<p>
+  Afterwards, we have to assign Permissions to ost-config.php
+  
+  - Disable inheritance → Remove all existing permissions.
+  - Add new permissions: Everyone → All.
+</p>
+<p>
+  Proper permissions allow osTicket to write to this file during installation.
+
 </p>
 <br />
 <p>
